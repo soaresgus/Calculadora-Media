@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de média</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js" type="text/javascript"></script>
+</head>
+
+    <body>
+
+        <div id="container">
+            <h2>Calcular média</h2>
+
+            <div>
+                <label for="numeros">Digite os números separando-os por uma vírgula (,) e casas decimais com ponto (.):</label>
+                <input type="text" placeholder="Exemplo: 3, 10.5, 12, 4.3, 7" id="numeros">
+            </div>
+
+            <div>
+                <input type="text" readonly="readonly" placeholder="Resultado" id="resultado">
+            </div>
+
+            <div>
+                <input type="button" value="CALCULAR" id="calcular" onclick="calcular(); return true">
+            </div>
+        </div>
+
+    </body>
+
+</html>

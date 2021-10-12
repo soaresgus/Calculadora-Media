@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(fundo.jpg) no-repeat;
+    background-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container {
+    width: 720px;
+    height: 320px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+}
+
+label {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input#numeros, input#resultado, input#calcular {
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    transition: .3s;
+    margin: 5px;
+}
+
+input#calcular {
+    border-radius: 10px;
+    height: 50px;
+    background-color: #5cb85c;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+input#calcular:hover {
+    cursor: pointer;
+    background-color: rgb(65, 136, 65);
+}
+
+input#resultado:hover {
+    cursor: default;
+    box-shadow: 0 0 0pt 1pt rgb(43, 179, 172);
+}
+
+input#resultado {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input#numeros:focus {
+    outline: none;
+    box-shadow: 0 0 0pt 1pt rgb(43, 179, 172);
+}
+
+input#resultado:focus {
+    outline: none;
+}
